@@ -1,0 +1,131 @@
+/*===Typography===*/
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14pt;
+    line-height: 18pt;
+    color: #000000;}
+
+nav a {
+    color: #cdcdcd;
+    text-decoration: none;
+    font-family: "Helvetica";
+    font-size: 18pt;
+    line-height: 18pt;
+    font-weight: bold;
+    margin-right: 30px;
+   }
+
+h1{
+    font-family: "Teko";
+    font-weight: 600;
+    font-size: 72pt;
+}
+
+h2 {
+    font-family: "Helvetica";
+    font-weight: bold;
+    font: size 24pt;
+}
+
+ul a{
+    list-style-type: circle;
+    
+
+}
+/*===Backgrounds===*/
+
+footer{
+    font-family: "Helvetica";
+    font-style:oblique;
+    font-size: 10pt;
+    line-height: 18pt;
+    background-color: black;
+    color: #cdcdcd;
+    padding: 50px;
+    
+}
+
+header{
+    background-color:black;
+    padding:30px;
+ 
+}
+
+main{
+    background-color: #cdcdcd;
+}
+
+/*===Box Model===*/
+
+#splash{
+    background-image: url("heading.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+#foodarticles{
+    padding:50px;
+}
+
+nav{
+    padding:30px;
+}
+
+article{
+    margin-bottom: 40px;
+}
+
+#aside{
+    margin-left:40px;
+    font-family: "Helvetica";
+    font-size: 14pt;
+    line-height: 22pt;
+}
+
+/*===Layout===*/
+
+img{
+    float:left;
+    margin-right:15px;
+    margin-bottom:15px;
+}
+
+#container{
+    width:1000px;
+    margin-right:auto;
+    margin-left: auto;
+    
+}
+
+main{ 
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+#splash{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    text-align: center;
+
+}
+
+
+footer{
+text-align: center;
+
+}
+
+#advertisement{
+    font-family: "Helvetica";
+    font-size: 14pt;
+    background-color: red;
+    float:right;
+   margin-left: 650px;
+   
+}
