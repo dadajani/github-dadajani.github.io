@@ -1,131 +1,195 @@
-/*===Typography===*/
+/* 
+
+=== FoodGo Lab ===
+
+Do not delete existing CSS
+
+*/
+
+/* == Typography == */
+
 body {
-    font-family: "Helvetica", "Arial", sans-serif;
-    font-size: 14pt;
-    line-height: 18pt;
-    color: #000000;}
-
-nav a {
-    color: #cdcdcd;
-    text-decoration: none;
-    font-family: "Helvetica";
-    font-size: 18pt;
-    line-height: 18pt;
-    font-weight: bold;
-    margin-right: 30px;
-   }
-
-h1{
-    font-family: "Teko";
-    font-weight: 600;
-    font-size: 72pt;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 1rem;
+    line-height: 1.29rem;
 }
 
 h2 {
-    font-family: "Helvetica";
-    font-weight: bold;
-    font: size 24pt;
+    font-size: 2.14rem;
 }
 
-ul a{
-    list-style-type: circle;
-    
-
-}
-/*===Backgrounds===*/
-
-footer{
-    font-family: "Helvetica";
-    font-style:oblique;
-    font-size: 10pt;
-    line-height: 18pt;
-    background-color: black;
-    color: #cdcdcd;
-    padding: 50px;
-    
+header,
+footer {
+    color: #b56441;
 }
 
-header{
-    background-color:black;
-    padding:30px;
- 
+a {
+    text-decoration: none;
+    color: #b56441;
+    font-size: 1rem;
 }
 
-main{
-    background-color: #cdcdcd;
+#legal {
+    font-size: 0.71rem;
+    font-style: italic;
 }
 
-/*===Box Model===*/
-
-#splash{
-    background-image: url("heading.jpg");
-    background-size: cover;
-    height: 400px;
+#nav a {
+    margin-right: 0.54rem;
+    display: block;
+    background-color: orange;
+    text-align: center;
+    justify-content: center;
+    padding: 10pt;
 }
 
-#foodarticles{
-    padding:50px;
+#nav a:hover {
+    color: #7d4700;
 }
 
-nav{
-    padding:30px;
+#splash {
+    text-align: center;
+    font-size: 3.43rem;
+    line-height: 21.43rem;
+    color: white;
+    text-shadow: 0px 0px 5px #6e6e6e;
 }
 
-article{
-    margin-bottom: 40px;
+footer {
+    font-style: italic;
 }
 
-#aside{
-    margin-left:40px;
-    font-family: "Helvetica";
-    font-size: 14pt;
-    line-height: 22pt;
+/* Font Awesome icons */
+.fab {
+    font-size: 2.14rem;
+    margin-right: 1.25rem;
 }
 
-/*===Layout===*/
-
-img{
-    float:left;
-    margin-right:15px;
-    margin-bottom:15px;
+.fab:hover {
+    color: pink;
 }
 
-#container{
-    width:1000px;
-    margin-right:auto;
-    margin-left: auto;
-    
+
+
+/* == Background == */
+
+
+body {
+    background-color: #fcd303;
 }
 
-main{ 
+main {
+    background-color: #ffdd80;
+    grid-template-columns: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+#splash {
+    background-image: url(splash-backing.jpg);
+}
+
+/* == Box Model == */
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+footer {
+    padding: 1.25rem;
+}
+
+header {
+    padding: 1.07rem;
+}
+
+button {
+    border: 0;
+    background-color: #b56441;
+    color: #fff;
+    padding: 1.07rem;
+    font-size: 2.14rem;
+    margin-top: 0.80rem;
+}
+
+footer {
+    padding-top: 2.68rem;
+}
+
+#splash {
+    height: 21.43rem;
+    grid-column: 1/2;
+}
+
+#app {
+    height: 10.71rem;
+    grid-column: 1/2;
+}
+
+/* === Layout  === */
+
+
+/* = Grid =*/
+header,
+footer {
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 50% 50%;
 }
 
-#splash{
+main {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+#app {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 4;
+}
+
+#splash {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    height: 10.7rem;
+}
+
+/* = Flexbox = */
+
+#app,
+#splash {
     display: flex;
+}
+
+#app,
+#splash {
     align-items: center;
     justify-content: center;
 }
 
-header{
+/* = Other = */
+
+* {
+    box-sizing: border-box;
+}
+
+#social-media {
+    text-align: right;
+}
+
+#app {
     text-align: center;
+}
+
+#logo {
+    text-align: center;
+    justify-content: center;
 
 }
 
-
-footer{
-text-align: center;
-
-}
-
-#advertisement{
-    font-family: "Helvetica";
-    font-size: 14pt;
-    background-color: red;
-    float:right;
-   margin-left: 650px;
-   
+#mobile-menu{
+    position: fixed;
+    top: 10px;
+    right: 10px;
 }
